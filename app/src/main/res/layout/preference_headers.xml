@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference_headers xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+    <header android:fragment = "com.kunyuhan.robot.androidtest$Prefs1Fragment"
+            android:icon = "@drawable/ic_settings_application"
+            android:title = "程序选项设置"
+            android:summary = "设置应用的相关选项"
+            android:layout_width="wrap_content"/>
+    <header android:fragment = "com.kunyuhan.robot.androidtest$Prefs1Fragment"
+            android:icon = "@drawable/ic_setting_display"
+            android:title="界面选项设置"
+            android:summary = "设置界面的相关选项">
+        <extra android:name = "website"
+               android:value="www.baidu.com"/>
+    </header>
+    <header android:icon = "@drawable/ic_setting_display"
+            android:title = "使用Intent"
+            android:summary="使用Intent启动某个Activity">
+            <intent android:action="android.intent.action.View"
+                    android:data="http://www.baidu.com"/>
+    </header>
+</preference_headers>
